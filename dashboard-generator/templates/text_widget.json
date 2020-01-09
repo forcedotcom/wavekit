@@ -1,0 +1,10 @@
+"{_{ name }_}": {
+    "parameters": {
+        "fontSize": {_{font_size}_},
+        "showActionMenu": false,
+        "text": "{_{ text }_}",
+        "textAlignment": "{_{ alignment }_}",
+        "textColor": "{_{ text_colour }_}"
+    },
+    "type": "text"
+}

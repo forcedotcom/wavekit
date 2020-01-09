@@ -1,0 +1,96 @@
+"{_{step_name}_}": {
+    "broadcastFacet": false,
+    "groups": [],
+    "label": "{_{step_name}_}",
+    "numbers": [],
+    "query": "{_{saql_query}_}",
+    "receiveFacet": true,
+    "selectMode": "single",
+    "strings": [],
+    "type": "saql",
+    "useGlobal": true,
+    "visualizationParameters": {
+        "parameters": {
+            "autoFitMode": "keepLabels",
+            "showValues": true,
+            {_{ bins }_}
+            "legend": {
+                "descOrder": false,
+                "showHeader": true,
+                "show": {_{show_legend}_},
+                "customSize": "auto",
+                "position": "right-top",
+                "inside": false
+            },
+            "axisMode": "{_{ axis_mode }_}",
+            "totalSumMode": "none",
+            "tooltip": {
+                "showBinLabel": true,
+                "measures": "",
+                "showNullValues": true,
+                "showPercentage": true,
+                "showDimensions": true,
+                "showMeasures": true,
+                "customizeTooltip": false,
+                "dimensions": ""
+            },
+            "visualizationType": "{_{ vis_type }_}",
+            "title": {
+                "fontSize": {_{ font_size }_},
+                "subtitleFontSize": 11,
+                "label": "{_{ title_label }_}",
+                "align": "center",
+                "subtitleLabel": ""
+            },
+            "binValues": false,
+            "trellis": {
+                "flipLabels": false,
+                "showGridLines": true,
+                "size": [
+                    100,
+                    100
+                ],
+                "enable": false,
+                "type": "x",
+                "chartsPerLine": 4
+            },
+            {_{ col_map }_}
+            "showActionMenu": {_{ show_action }_},
+            "measureAxis2": {
+                "sqrtScale": false,
+                "showTitle": true,
+                "showAxis": true,
+                "title": "{_{ title_2 }_}",
+                "customDomain": {
+                    "showDomain": false
+                }
+            },
+            "measureAxis1": {
+                "sqrtScale": false,
+                "showTitle": true,
+                "showAxis": true,
+                "title": "{_{ title_1 }_}",
+                "customDomain": {
+                    "showDomain": false
+                }
+            },
+            "theme": "wave",
+            "dimensionAxis": {
+                "showTitle": {_{ show_title }_},
+                "customSize": "auto",
+                "showAxis": {_{ show_axis }_},
+                "title": "",
+                "icons": {
+                    "useIcons": false,
+                    "iconProps": {
+                        "fit": "cover",
+                        "column": "",
+                        "type": "round"
+                    }
+                }
+            },
+            "applyConditionalFormatting": true
+        },
+        "type": "chart"
+    }
+}

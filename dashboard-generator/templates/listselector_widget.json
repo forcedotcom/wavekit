@@ -1,0 +1,11 @@
+"{_{ name }_}": {
+    "parameters": {
+        "compact": false,
+        "exploreLink": false,
+        "instant": true,
+        "measureField": "none",
+        "step": "{_{ step_name }_}",
+        "title": "{_{ display_name }_}"
+    },
+    "type": "listselector"
+}

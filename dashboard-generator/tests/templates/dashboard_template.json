@@ -1,0 +1,44 @@
+{
+    "label":"{_{ dashboard_name }_}",
+    "state":{
+        "dataSourceLinks":[],
+        "gridLayouts":[
+            {
+                "name":"Default",
+                "numColumns":38,
+                "pages":[
+                    {_{ pages }_}
+                ],
+                "rowHeight":"normal",
+                "selectors":[],
+                "style":{
+                    "alignmentX":"left",
+                    "alignmentY":"top",
+                    "backgroundColor":"rgb(251, 251, 251)",
+                    "cellSpacingX":8,
+                    "cellSpacingY":8,
+                    "fit":"original",
+                    "gutterColor":"#E6ECF2"
+                },
+                "version":1
+            }
+        ],
+        "layouts":[],
+        "steps":{
+{_{ steps }_}
+},
+"widgetStyle":{
+"backgroundColor":"#FFFFFF",
+"borderColor":"#E6ECF2",
+"borderEdges":[],
+"borderRadius":0,
+"borderWidth":1
+},
+"widgets":{
+{_{ widgets }_}
+}
+},
+"folder": {
+"id": "{_{ folder_id }_}"
+}
+}

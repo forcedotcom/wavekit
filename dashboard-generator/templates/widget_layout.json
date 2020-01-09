@@ -1,0 +1,8 @@
+{
+    "colspan": {_{ colspan }_},
+    "column": {_{ col }_},
+    "name": "{_{ name }_}",
+    "row": {_{ row }_},
+    "rowspan": {_{ rowspan }_},
+    "widgetStyle": { {_{ style }_} }
+}

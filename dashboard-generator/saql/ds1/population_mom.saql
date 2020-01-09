@@ -1,0 +1,7 @@
+b = load "%(yearly_demo_1)s";
+b = group b by 'Year';
+b = foreach b generate 'Year', sum('pop_estimate') as 'pop';
+b = group b by 'Year';
+b = foreach b generate ( (sum('pop')-sum(sum('pop')) over ([-1..-1] partition by all order by ('Year')  ) )/sum(sum('pop')) over ([-1..-1] partition by all order by ('Year')  ) ) as 'mom', 'Year' as 'Year';
+b = filter b by toDate('Year', "yyyy") == toDate("{{cell(Period_3.selection, 0, "Period").asString()}}", "MMM yyyy");
+b = foreach b generate number_to_string('mom', "+;-") + number_to_string(abs('mom'), "#0.00%") + " MoM" as 'mom';

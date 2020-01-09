@@ -1,0 +1,16 @@
+"{_{ name }_}": {
+    "parameters": {
+        "compact": {_{ compact }_},
+        "exploreLink": false,
+        "measureField": "{_{ var_name }_}",
+        "numberColor": "#091A3E",
+        "numberSize": {_{ font_size }_},
+        "showActionMenu": false,
+        "step": "{_{ step_name }_}",
+        "textAlignment": "center",
+        "title": "",
+        "titleColor": "#091A3E",
+        "titleSize": 10
+    },
+    "type": "number"
+}

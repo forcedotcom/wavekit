@@ -1,0 +1,15 @@
+"{_{ name }_}": {
+    "parameters": {
+        "destinationLink": {
+            "url": "{_{ url }_}",
+            "name": "{_{ dash_link }_}"
+        },
+        "destinationType": "{_{ dest_type }_}",
+        "fontSize": {_{ font_size }_},
+        "includeState": false,
+        "text": "{_{ display_name }_}",
+        "textAlignment": "{_{ alignment }_}",
+        "textColor": "{_{ text_colour }_}"
+    },
+    "type": "link"
+}

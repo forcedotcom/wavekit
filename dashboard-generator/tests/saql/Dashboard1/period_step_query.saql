@@ -1,0 +1,6 @@
+q = load "period";
+q = group q by ('Period_Year', 'Period_Month', 'Period_Day');
+q = foreach q generate toDate('Period_Year' + 'Period_Month' + 'Period_Day', "yyyyMMdd") as 'p', count() as 'count';
+q = order q by 'p' desc;
+q = foreach q generate toString('p', "MMM yyyy") as 'Period',  'count';
+q = limit q  100;

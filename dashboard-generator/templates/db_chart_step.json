@@ -1,0 +1,12 @@
+"{_{step_name}_}": {
+    "groups": [],
+    "label": "{_{step_name}_}",
+    "numbers": [],
+    "query": "{_{saql_query}_}",
+    "selectMode": "singlerequired",
+    "strings": [],
+    "useGlobal": true,
+    "type": "saql",
+    "visualizationParameters": {},
+    "broadcastFacet": false
+}

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+PWD=`pwd`
+
+psql -U postgres -c "COPY test_data.demographic (year,DOMESTICMIG,REGION,CENSUS2010POP,STATE,POPESTIMATE,BIRTHS,NATURALINC,INTERNATIONALMIG,DEATHS,ESTIMATESBASE)
+    FROM '${PWD}/us_demographic.csv' DELIMITER ',' CSV HEADER;" testdb

@@ -1,0 +1,13 @@
+**/*.pyc
+**/*.
+data
+build
+cover/
+.coverage
+coverage.xml
+.idea
+log
+*.iml
+venv/
+**/output/*
+.venv

@@ -1,0 +1,17 @@
+"{_{ name }_}": {
+    "type": "navigation",
+    "parameters": {
+        "fontSize": {_{font_size}_},
+        "textColor": "#54698D",
+        "tabCount": 5,
+        "selectedTab": {
+            "textColor": "#0070D2",
+            "backgroundColor": "#FFFFFF",
+            "borderEdges": [
+                "bottom"
+            ],
+            "borderColor": "#0070D2",
+            "borderWidth": 2
+        }
+    }
+}

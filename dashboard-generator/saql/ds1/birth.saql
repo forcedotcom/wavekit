@@ -1,0 +1,11 @@
+q = load "%(yearly_demo_1)s";
+q = foreach q generate toDate('Year_sec_epoch') as 'd', 'birth';
+q = filter q by d == toDate("{{cell(Period_3.selection, 0, "Period").asString()}}", "MMM yyyy");
+q = group q by all;
+q = foreach q generate sum('birth') as 'sum_value';
+q = foreach q generate (case
+                when 'sum_value' > 1000000 then number_to_string('sum_value'/1000000, "#.0") + "M"
+                when 'sum_value' > 1000 then number_to_string('sum_value'/1000, "#.0")  + "K"
+                else number_to_string('sum_value', "#.0")
+                end) as 'sum_value';
+q = limit q 1;

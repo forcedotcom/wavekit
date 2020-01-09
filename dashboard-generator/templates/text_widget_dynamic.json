@@ -1,0 +1,10 @@
+"{_{name}_}": {
+    "parameters": {
+        "fontSize": {_{font_size}_},
+        "showActionMenu": false,
+        "text": "{{cell({_{step_name}_}.selection, 0, \"{_{var_name}_}\").asString()}}",
+        "textAlignment": "left",
+        "textColor": "#335779"
+    },
+    "type": "text"
+}

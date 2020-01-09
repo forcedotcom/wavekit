@@ -1,0 +1,162 @@
+{
+   "fileFormat" : {
+      "charsetName" : "UTF-8",
+      "fieldsDelimitedBy" : ",",
+      "fieldsEnclosedBy" : "\"",
+      "numberOfLinesToIgnore" : 1
+   },
+   "objects" : [
+      {
+         "connector" : "WaveUploader",
+         "description" : "Monthly data",
+         "fullyQualifiedName" : "yearly_demo_1",
+         "label" : "US Yearly Demo Data",
+         "name" : "yearly_demo_1",
+         "fields" : [
+            {
+               "description" : "Data for the Month of yyyy",
+               "format" : "yyyy",
+               "fullyQualifiedName" : "yearly_demo_1.year",
+               "isMultiValue" : false,
+               "isSystemField" : false,
+               "isUniqueId" : false,
+               "label" : "year",
+               "name" : "Year",
+               "type" : "Date"
+            },
+            {
+               "description" : "Region",
+               "fullyQualifiedName" : "yearly_demo_1.REGION",
+               "isMultiValue" : false,
+               "isSystemField" : false,
+               "isUniqueId" : false,
+               "label" : "Region",
+               "name" : "region",
+               "type" : "Text"
+            },
+            {
+               "description" : "State",
+               "fullyQualifiedName" : "yearly_demo_1.STATE",
+               "isMultiValue" : false,
+               "isSystemField" : false,
+               "isUniqueId" : false,
+               "label" : "State",
+               "name" : "state",
+               "type" : "Text"
+            },
+            {
+               "description" : "Census",
+               "fullyQualifiedName" : "yearly_demo_1.CENSUS2010POP",
+               "isMultiValue" : false,
+               "isSystemField" : false,
+               "isUniqueId" : false,
+               "label" : "Census 2010",
+               "name" : "Census",
+               "precision" : 10,
+               "scale" : 0,
+               "defaultValue":"0",
+               "type" : "Numeric",
+               "format" : "#####0"
+            },
+            {
+               "description" : "Domestic Migration",
+               "fullyQualifiedName" : "yearly_demo_1.DOMESTICMIG",
+               "isMultiValue" : false,
+               "isSystemField" : false,
+               "isUniqueId" : false,
+               "label" : "Domestic Migration",
+               "name" : "domestic_mig",
+               "precision" : 10,
+               "scale" : 0,
+               "defaultValue":"0",
+               "type" : "Numeric",
+               "format" : "#####0"
+            },
+            {
+               "description" : "Population Estimate",
+               "fullyQualifiedName" : "yearly_demo_1.POPESTIMATE",
+               "isMultiValue" : false,
+               "isSystemField" : false,
+               "isUniqueId" : false,
+               "label" : "Population Estimate",
+               "name" : "pop_estimate",
+               "precision" : 10,
+               "scale" : 0,
+               "defaultValue":"0",
+               "type" : "Numeric",
+               "format" : "#####0"
+            },
+            {
+               "description" : "Death",
+               "fullyQualifiedName" : "yearly_demo_1.DEATHS",
+               "isMultiValue" : false,
+               "isSystemField" : false,
+               "isUniqueId" : false,
+               "label" : "Death",
+               "name" : "death",
+               "precision" : 10,
+               "scale" : 0,
+               "defaultValue":"0",
+               "type" : "Numeric",
+               "format" : "#####0"
+            },
+            {
+               "description" : "Birth",
+               "fullyQualifiedName" : "yearly_demo_1.BIRTHS",
+               "isMultiValue" : false,
+               "isSystemField" : false,
+               "isUniqueId" : false,
+               "label" : "Birth",
+               "name" : "birth",
+               "precision" : 10,
+               "scale" : 0,
+               "defaultValue":"0",
+               "type" : "Numeric",
+               "format" : "#####0"
+            },
+            {
+               "description" : "International Migration",
+               "fullyQualifiedName" : "yearly_demo_1.INTERNATIONALMIG",
+               "isMultiValue" : false,
+               "isSystemField" : false,
+               "isUniqueId" : false,
+               "label" : "International Migration",
+               "name" : "intl_mig",
+               "precision" : 10,
+               "scale" : 0,
+               "defaultValue":"0",
+               "type" : "Numeric",
+               "format" : "#####0"
+            },
+            {
+               "description" : "Base Estimate",
+               "fullyQualifiedName" : "yearly_demo_1.ESTIMATESBASE",
+               "isMultiValue" : false,
+               "isSystemField" : false,
+               "isUniqueId" : false,
+               "label" : "Base Estimate",
+               "name" : "base_est",
+               "precision" : 10,
+               "scale" : 0,
+               "defaultValue":"0",
+               "type" : "Numeric",
+               "format" : "#####0"
+            },
+            {
+               "description" : "Natural Increase",
+               "fullyQualifiedName" : "yearly_demo_1.NATURALINC",
+               "isMultiValue" : false,
+               "isSystemField" : false,
+               "isUniqueId" : false,
+               "label" : "Natural Increase",
+               "name" : "nat_inc",
+               "precision" : 10,
+               "scale" : 0,
+               "defaultValue":"0",
+               "type" : "Numeric",
+               "format" : "#####0"
+            }
+         ]
+      }
+   ]
+}

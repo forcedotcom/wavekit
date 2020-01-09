@@ -1,0 +1,7 @@
+{
+    "label":"{_{ display_name }_}",
+    "name":"{_{ name }_}",
+    "widgets":[
+        {_{ layouts }_}
+    ]
+}

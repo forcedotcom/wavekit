@@ -1,0 +1,30 @@
+{
+   "fileFormat" : {
+      "charsetName" : "UTF-8",
+      "fieldsDelimitedBy" : ",",
+      "fieldsEnclosedBy" : "\"",
+      "numberOfLinesToIgnore" : 1
+   },
+   "objects" : [
+      {
+         "connector" : "PeriodWaveUploader",
+         "description" : "period data",
+         "fields" : [
+            {
+               "description" : "Data for the Month of yyyy: like 2008",
+               "format" : "yyyy",
+               "fullyQualifiedName" : "period1.period",
+               "isMultiValue" : false,
+               "isSystemField" : false,
+               "isUniqueId" : false,
+               "label" : "Period",
+               "name" : "Period",
+               "type" : "Date"
+            }
+         ],
+         "fullyQualifiedName" : "period1",
+         "label" : "period",
+         "name" : "period1"
+      }
+   ]
+}

@@ -1,0 +1,5 @@
+q = load "%(yearly_demo_1)s";
+q = group q by '{_{group_name}_}';
+q = foreach q generate '{_{group_name}_}' as '{_{group_name}_}', count() as 'count';
+q = order q by '{_{group_name}_}' asc;
+q = limit q 2000;

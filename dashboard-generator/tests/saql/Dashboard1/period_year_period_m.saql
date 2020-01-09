@@ -1,0 +1,5 @@
+q = load "CTSFPDATA";
+q = group q by ('period_Year', 'period_Month', 'cost_type');
+q = foreach q generate 'period_Year' + "~~~" + 'period_Month' as 'period_Year~~~period_Month', 'cost_type' as 'Cost Type', sum('cost') as 'sum_value';
+q = order q by 'period_Year~~~period_Month' asc;
+q = limit q 2000;

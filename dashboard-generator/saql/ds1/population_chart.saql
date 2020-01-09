@@ -1,0 +1,5 @@
+q = load "%(yearly_demo_1)s";
+q = group q by ('Year_Year', 'region');
+q = foreach q generate 'Year_Year' , region, sum('pop_estimate') as 'sum_value';
+q = order q by 'Year_Year' asc;
+q = limit q 2000;
