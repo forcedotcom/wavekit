@@ -1,39 +1,40 @@
-# Wave Ui Dashboard Generator
+# Salesforce Analytics(Wave) UI Dashboard Generator
 
 ## Require:
-* python > 3.4
+* python > 3.5
 
 ## Install:
-This directory uses the following libraries:
+This module uses the following libraries:
 ```
+nose==1.3.7
+requests==2.11.1
+pygresql==5.1
 docopt==0.6.2
 mock==2.0.0
 JsonWeb==0.8.2
-SQLAlchemy==1.1.6
+SQLAlchemy==1.3.10
 Jinja2==2.10.1
-nose==1.3.7
 ```
 
-Required libraries are also listed in `requirements.txt` and can be installed with
+Required libraries can be found in `requirements.txt`. Users can install with make or pip command as
 ```
 make init
 or 
 pip3 install -r requirements.txt
 ```
 
-In addition, this directory requires local installation of the **wave_common** repository.
-
+In addition, this module requires installation of the **wave_common** modules.
 
 ## Overview
-
-ER Diagram:
-https://git.soma.salesforce.com/infra-insights/wavekit/blob/czhu-ui-change/dashboard-generator/er_diagram_cts.png
+We model Wave UI components with relational model. Below is a ER Diagram describing the relationships: 
+![ER diagram](https://github.com/forcedotcom/wavekit/blob/master/dashboard-generator/er_diagram_cts.png)
 
 The ER Diagram describes the relationship between different UI components and how they are generated from the metadata model.
 
+Our dashboard generator applies MVC model to to generate json files, and upload the generated Json files to Rest API.  Staring from processor, we will load metadata model through UIManager, and generate Json files afterwards. In the last step, we upload to Wave Rest API/during creating/updating. This generator supports create, update, delete and download mode. So you create new dashboards, update existing dashboards, delete old dashboard and download dashboard Json files via command line. 
 
-Code Structure:
-https://git.soma.salesforce.com/infra-insights/wavekit/blob/czhu-ui-change/dashboard-generator/wave_diagram.jpg
+Below is a sequence chart of components:
+![ER diagram](https://github.com/forcedotcom/wavekit/blob/master/dashboard-generator/wave_diagram.jpg)
 
 ## Set up metadata database
 
