@@ -25,18 +25,16 @@ pip3 install -r requirements.txt
 
 In addition, this module requires installation of the **wave_common** modules.
 
-
 ## Overview
 We model Wave UI components with relational model. Below is a ER Diagram describing the relationships: 
-![ER diagram](https://git.soma.salesforce.com/infra-insights/wavekit/blob/master/dashboard-generator/er_diagram_cts.png)
+![ER diagram](https://github.com/forcedotcom/wavekit/blob/master/dashboard-generator/er_diagram_cts.png)
 
 The ER Diagram describes the relationship between different UI components and how they are generated from the metadata model.
-
 
 Our dashboard generator applies MVC model to to generate json files, and upload the generated Json files to Rest API.  Staring from processor, we will load metadata model through UIManager, and generate Json files afterwards. In the last step, we upload to Wave Rest API/during creating/updating. This generator supports create, update, delete and download mode. So you create new dashboards, update existing dashboards, delete old dashboard and download dashboard Json files via command line. 
 
 Below is a sequence chart of components:
-![ER diagram](https://git.soma.salesforce.com/infra-insights/wavekit/blob/master/dashboard-generator/wave_diagram.jpg)
+![ER diagram](https://github.com/forcedotcom/wavekit/blob/master/dashboard-generator/wave_diagram.jpg)
 
 ## Set up metadata database
 
