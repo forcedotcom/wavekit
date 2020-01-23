@@ -10,7 +10,8 @@ Additional required packages are listed in the requirements.txt.
 
 This uploader allows to plug-in producers through dataProducers property in Setup in order to uploader multiple datasets into wave with one command.  The data will be saved into producer folders under dataFolder as in Setup upon success/failures.
 
-Wave Uploader Flow Diagram: https://git.soma.salesforce.com/infra-insights/wavekit/blob/czhu-ui-change/wave-uploader/Wave%20uploader%20flow.png
+Below is a flow of how wave uploader worksL
+![Wave Uploader Flow Diagram diagram](https://github.com/forcedotcom/wavekit/blob/master/wave-uploader/Wave%20uploader%20flow.png)
 
 ## Sample configuration
 Below is a sample configuration, you need to fill in wave username. password etc. 
@@ -23,7 +24,6 @@ password=****
 clientID=****
 clientSecret=***
 grantType=password
-password_mode=local
 
 [Setup]
 dataProducers={list of data producers, like testData1, separated by ,}
@@ -49,8 +49,6 @@ database=****
 username=****
 password=****
 timeout=120
-password_mode=local
-sslmode=require
 
 ```
 ## Upload data
@@ -62,5 +60,5 @@ To upload data, execute as:
 ```
 
 ## Metadata 
-Sometimes when uploading data to Wave, the format of the data is changed. For example, date dimension would be become a String dimension. We included some sample under metadata folder. We expect the file names are match pattern metadata_template-{dataset-name}.json. The dataset name should be same as dataset name as in .ini file of each data producer. 
+Sometimes when uploading data to Wave, the format of the data is changed. For example, date dimension would be become a String dimension. We included some sample under metadata folder. We expect the file names are match pattern metadata_template-{producer-name}.json. The dataset name should be same as dataset name as in .ini file of each data producer. 
 
