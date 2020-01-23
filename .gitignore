@@ -11,3 +11,5 @@ log
 venv/
 **/output/*
 .venv
+wave-uploader/sandbox/*
+dashboard-generator/tmp/*

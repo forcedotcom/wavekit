@@ -12,8 +12,6 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
-import requests
-import json
 
 class DBConfig:
     """
@@ -28,19 +26,6 @@ class DBConfig:
         self.sslmode = sslmode
 
 def create_db_config_from_config(config, section_name):
-    if(config.has_option(section_name, 'password_mode') and  config.get(section_name, 'password_mode') == 'local'):
-        password = config.get(section_name, 'password')
-    else:
-        proxies = { "http": None,"https": None,} 
-        request_url = config.get(section_name, 'subscriber') + '/horizon/ss/vault/' + config.get(section_name, 'vault_name') +'/secret/' + config.get(section_name, 'username')
-
-        req = requests.get(request_url, proxies=proxies)
-        res = json.loads(req.text)
-        password = ""
-    
-        if('password' in res):
-            password = res['password']
-        else:
-            raise Exception('Something went wrong with authentication -- see error:' + req.text)
+    password = config.get(section_name, 'password')
 
     return DBConfig(config.get(section_name, 'hostname'), config.get(section_name, 'database'), config.get(section_name, 'username'), password, config.get(section_name, 'timeout'), config.get(section_name, 'sslmode'))
